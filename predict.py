@@ -125,7 +125,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Predict on test video')
     parser.add_argument('model', type=str, help='Path to model')
-    parser.add_argument('video', type=str, default='<video0>', help='Video file to process (use \'<video0>\' for webcam)')
+    parser.add_argument('video', type=str, default='<video0>', help='Video file to process (use "webcam" for webcam)')
 
     parser.add_argument('-t', '--thr', type=float, default=0.5, help='Map Threshold')
     parser.add_argument('-rl', type=int, help='RoI X coordinate of top left corner')
